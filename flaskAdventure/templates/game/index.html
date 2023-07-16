@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Adventure GPT{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <article class="post">
+      <header>
+        <div>
+          <h1>Let the adventure begin</h1>
+          <div class="about">for the C3 Crew</div>
+        </div>
+      </header>
+      <p class="body">{{ intro }}</p>
+      <form method="post">
+        <label for="title">Ready?</label>
+        <input type="submit" value="Start Game">
+      </form>
+    </article>
+{% endblock %}

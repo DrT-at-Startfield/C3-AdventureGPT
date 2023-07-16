@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Adventure GPT!{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <form method="post">
+        <textarea name="the_result" rows="6" cols="50">{{last_result}}</textarea>
+        <input type="radio" id="c1" name="game_choice" value="{{choices[0]}}">
+        <label for="c1">{{choices[0]}}</label><br>
+        <input type="radio" id="c2" name="game_choice" value="{{choices[1]}}">
+        <label for="c2">{{choices[1]}}</label><br>
+        <input type="radio" id="c3" name="game_choice" value="{{choices[2]}}">
+        <label for="c3">{{choices[2]}}</label>
+        <input type="radio" id="c4" name="game_choice" value="{{choices[3]}}">
+        <label for="c4">{{choices[3]}}</label>
+        <input type="submit" value="Choose wisely!">
+    </form>
+{# This is a comment block. Uncomment if you want to see this debug output
+  <h3>debug></h3>
+  {% for choice in choices %}
+  <p>{{choice}}</p>
+  {% endfor %}
+#}
+{% endblock %}
