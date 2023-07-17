@@ -23,6 +23,8 @@ authors = ["Stephen Trickey <strickey@startfield.org>"]
 python = ">=3.10.0,<3.11"
 replit = "^3.2.4"
 Flask = "^2.1.3"
+openai = "^0.27.8"
+python-dotenv = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
 debugpy = "^1.6.2"
